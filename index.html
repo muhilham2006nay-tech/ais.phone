@@ -3,207 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIS Phone.id</title>
-
+<title>AISPhone.id | Rental & Service iPhone</title>
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f4f6f9;
-}
-
-header{
-    background:#0B3D91;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-nav{
-    background:#082b66;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-}
-
-section{
-    padding:40px;
-}
-
-.card-container{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    flex:1;
-    min-width:250px;
-}
-
-form{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-}
-
-input,select,textarea{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-}
-
-button{
-    background:#0B3D91;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    cursor:pointer;
-    border-radius:5px;
-}
-
-footer{
-    background:#0B3D91;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#0b0b0b;color:#fff;line-height:1.6}
+header{position:sticky;top:0;background:rgba(10,10,10,.95);backdrop-filter:blur(10px);z-index:1000}
+nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px 20px}
+.logo{height:60px}
+nav ul{display:flex;list-style:none;gap:18px}
+nav a{color:#fff;text-decoration:none}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:linear-gradient(135deg,#000,#1f2937)}
+.hero img{width:220px;max-width:80%}
+.hero h1{font-size:3rem;margin:20px 0 10px}
+.hero p{max-width:800px}
+.btn{display:inline-block;margin:10px;padding:12px 24px;background:#0ea5e9;color:#fff;text-decoration:none;border-radius:10px}
+section{max-width:1200px;margin:auto;padding:70px 20px}
+h2{text-align:center;margin-bottom:30px;color:#38bdf8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#171717;padding:20px;border-radius:16px;border:1px solid #333}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border:1px solid #333;padding:12px;text-align:center}
+.table th{background:#0ea5e9}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.stat{background:#171717;padding:20px;border-radius:16px;text-align:center}
+.faq details{background:#171717;padding:15px;border-radius:10px;margin:10px 0}
+footer{background:#000;padding:30px;text-align:center}
+.float-wa{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold}
+@media(max-width:768px){nav{flex-direction:column;gap:10px}nav ul{flex-wrap:wrap;justify-content:center}.hero h1{font-size:2rem}}
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>AIS Phone.id</h1>
-    <p>Rental & Service iPhone Terpercaya</p>
+<nav>
+<img src="logo.png" class="logo" alt="AISPhone.id">
+<ul>
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#harga">Harga</a></li>
+<li><a href="#promo">Promo</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
 </header>
 
-<nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#iphone">Daftar iPhone</a>
-    <a href="#service">Service</a>
-    <a href="#booking">Booking</a>
-    <a href="#kontak">Kontak</a>
-</nav>
-
-<section id="beranda">
-    <h2>Selamat Datang</h2>
-    <br>
-    <p>
-        AIS Phone.id menyediakan layanan rental dan service iPhone
-        dengan proses cepat, harga transparan, dan pelayanan terpercaya.
-    </p>
+<section class="hero">
+<img src="logo.png" alt="Logo">
+<h1>AISPhone.id</h1>
+<p>Solusi terbaik untuk iPhone Anda. Sewa fleksibel, service profesional, hasil maksimal!</p>
+<div>
+<a class="btn" href="https://wa.me/6287735347799">Book Now</a>
+<a class="btn" href="#harga">Lihat Harga</a>
+</div>
 </section>
 
-<section id="iphone">
-    <h2>Daftar iPhone</h2>
-    <br>
-
-    <div class="card-container">
-
-        <div class="card">
-            <h3>iPhone 11</h3>
-            <p>64 GB</p>
-            <p>Rp75.000 / Hari</p>
-        </div>
-
-        <div class="card">
-            <h3>iPhone 12</h3>
-            <p>128 GB</p>
-            <p>Rp100.000 / Hari</p>
-        </div>
-
-        <div class="card">
-            <h3>iPhone 13</h3>
-            <p>128 GB</p>
-            <p>Rp125.000 / Hari</p>
-        </div>
-
-    </div>
+<section id="promo">
+<h2>PROMO SPESIAL</h2>
+<div class="grid">
+<div class="card"><h3>Service Pertama</h3><p>Diskon hingga 40%</p></div>
+<div class="card"><h3>2–3 Hari</h3><p>20% Diskon</p></div>
+<div class="card"><h3>4–6 Hari</h3><p>30% Diskon</p></div>
+<div class="card"><h3>7–13 Hari</h3><p>40% Diskon</p></div>
+<div class="card"><h3>14+ Hari</h3><p>50% Diskon</p></div>
+</div>
 </section>
 
-<section id="service">
-    <h2>Layanan Service</h2>
-    <br>
-
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Ganti LCD</h3>
-            <p>Perbaikan layar rusak atau pecah.</p>
-        </div>
-
-        <div class="card">
-            <h3>Ganti Baterai</h3>
-            <p>Mengatasi baterai boros dan kesehatan baterai rendah.</p>
-        </div>
-
-        <div class="card">
-            <h3>Perbaikan Kamera</h3>
-            <p>Perbaikan kamera depan maupun belakang.</p>
-        </div>
-
-    </div>
+<section>
+<h2>STATISTIK</h2>
+<div class="stats">
+<div class="stat"><h3>500+</h3><p>Pelanggan</p></div>
+<div class="stat"><h3>1000+</h3><p>Service Berhasil</p></div>
+<div class="stat"><h3>30 Hari</h3><p>Garansi</p></div>
+<div class="stat"><h3>24/7</h3><p>Support</p></div>
+</div>
 </section>
 
-<section id="booking">
-    <h2>Form Booking</h2>
-    <br>
+<section id="layanan">
+<h2>LAYANAN KAMI</h2>
+<div class="grid">
+<div class="card"><h3>Service iPhone</h3><p>Kerusakan layar, baterai, kamera dan lainnya.</p></div>
+<div class="card"><h3>Deep Cleaning</h3><p>Pembersihan menyeluruh untuk performa maksimal.</p></div>
+<div class="card"><h3>Sewa iPhone</h3><p>Harian, mingguan, atau bulanan.</p></div>
+<div class="card"><h3>Garansi Service</h3><p>Garansi hingga 30 hari.</p></div>
+</div>
+</section>
 
-    <form>
-        <label>Nama Lengkap</label>
-        <input type="text">
+<section id="harga">
+<h2>HARGA SERVICE</h2>
+<table class="table">
+<tr><th>Layanan</th><th>Harga</th></tr>
+<tr><td>Ganti LCD</td><td>Mulai Rp100.000</td></tr>
+<tr><td>Ganti Baterai</td><td>Mulai Rp50.000</td></tr>
+<tr><td>Ganti Backglass</td><td>Mulai Rp50.000</td></tr>
+<tr><td>Ganti Kamera</td><td>Mulai Rp50.000</td></tr>
+</table>
 
-        <label>Nomor HP</label>
-        <input type="text">
+<br><br>
 
-        <label>Pilih iPhone</label>
-        <select>
-            <option>iPhone 11</option>
-            <option>iPhone 12</option>
-            <option>iPhone 13</option>
-        </select>
+<h2>HARGA RENTAL</h2>
+<table class="table">
+<tr><th>Tipe</th><th>Harga</th></tr>
+<tr><td>iPhone 11</td><td>Rp150.000/hari</td></tr>
+<tr><td>iPhone 12</td><td>Rp170.000/hari</td></tr>
+<tr><td>iPhone 13</td><td>Rp200.000/hari</td></tr>
+</table>
+</section>
 
-        <label>Lama Sewa (Hari)</label>
-        <input type="number">
+<section>
+<h2>KEUNGGULAN KAMI</h2>
+<div class="grid">
+<div class="card"><h3>Teknisi Profesional</h3><p>Berpengalaman & terpercaya.</p></div>
+<div class="card"><h3>Sparepart Premium</h3><p>Kualitas terbaik untuk performa maksimal.</p></div>
+<div class="card"><h3>Cepat & Bergaransi</h3><p>Pengerjaan cepat dengan garansi.</p></div>
+<div class="card"><h3>Antar Jemput</h3><p>Melayani area Jogja dan sekitarnya.</p></div>
+</div>
+</section>
 
-        <label>Catatan</label>
-        <textarea rows="4"></textarea>
+<section>
+<h2>CARA BOOKING</h2>
+<div class="grid">
+<div class="card">1. Pilih layanan atau iPhone.</div>
+<div class="card">2. Hubungi WhatsApp.</div>
+<div class="card">3. Konfirmasi pembayaran.</div>
+<div class="card">4. Unit siap digunakan.</div>
+</div>
+</section>
 
-        <button type="submit">Kirim Booking</button>
-    </form>
+<section>
+<h2>TESTIMONI</h2>
+<div class="grid">
+<div class="card">"Pelayanan cepat dan ramah." ⭐⭐⭐⭐⭐</div>
+<div class="card">"iPhone rental bersih dan terawat." ⭐⭐⭐⭐⭐</div>
+<div class="card">"Harga transparan dan bergaransi." ⭐⭐⭐⭐⭐</div>
+</div>
+</section>
+
+<section id="faq" class="faq">
+<h2>FAQ</h2>
+<details><summary>Apakah ada garansi service?</summary><p>Ya, hingga 30 hari.</p></details>
+<details><summary>Apakah tersedia rental mingguan?</summary><p>Ya, tersedia harian, mingguan, dan bulanan.</p></details>
+<details><summary>Apakah melayani antar jemput?</summary><p>Ya, area Jogja dan sekitarnya.</p></details>
 </section>
 
 <section id="kontak">
-    <h2>Kontak</h2>
-    <br>
-
-    <p>WhatsApp : 08xxxxxxxxxx</p>
-    <p>Instagram : @AISPhone.id</p>
-    <p>Lokasi : Yogyakarta</p>
+<h2>HUBUNGI KAMI</h2>
+<div class="card">
+<p><b>WhatsApp:</b> 0877-3534-7799</p>
+<p><b>Instagram:</b> AISPhone.id</p>
+<p><b>Lokasi:</b> Sleman, Yogyakarta</p>
+</div>
 </section>
 
 <footer>
-    <h3>AIS Phone.id</h3>
-    <p>Rental & Service iPhone Terpercaya</p>
-    <br>
-    <p>© 2026 AIS Phone.id</p>
+<p><b>SEWA iPHONE</b> : iPhone 11 | iPhone 12 | iPhone 13</p>
+<p><b>SERVICE</b> : Bisa untuk semua jenis iPhone</p>
+<p>© 2026 AISPhone.id</p>
 </footer>
+
+<a class="float-wa" href="https://wa.me/6287735347799">WhatsApp</a>
 
 </body>
 </html>
